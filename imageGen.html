@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile-info</title>
+    <style>
+      #main {
+        display: flex;
+      }
+      #form {
+        box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+          rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+          rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: white;
+        margin: 35px;
+        height: 290px;
+      }
+      #form h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #profile-info {
+        margin: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30PX;
+      }
+      #profile-info img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        
+      }
+      .cards{
+        padding: 45px;
+         box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+          rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+          rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        width:150px;
+        height:240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="form">
+        <h1>Profile-info</h1>
+        <input type="text" placeholder="Name" id="name" /><br />
+        <input type="text" placeholder="Title" id="title" /><br />
+        <textarea id="des" placeholder="Descripation"></textarea><br />
+        <input type="file" id="file" /><br />
+        <button onclick="Addfun()">Add profile</button>
+      </div>
+
+      <div id="profile-info">
+       
+      </div>
+    </div>
+
+    <script>
+      let name = document.querySelector("#name");
+      let title = document.querySelector("#title");
+      let des = document.querySelector("#des");
+      let file = document.querySelector("#file");
+
+      function Addfun() {
+        if (
+          name.value == "" ||
+          title.value == "" ||
+          des.value == "" ||
+          file.value == ""
+        ) {
+          return alert("empty");
+        }
+
+        let img = document.createElement("img")
+        img.src = URL.createObjectURL(file.files[0])
+
+        let h2 = document.createElement("h2");
+        h2.innerText = name.value;
+
+        let h4 = document.createElement("h4");
+        h4.innerText = title.value;
+
+        let p = document.createElement("p");
+        p.innerText = des.value;
+
+        let div = document.createElement("div");
+        div.className = "cards";
+        div.append(img,h2,h4,p)
+        
+        let profile = document.querySelector("#profile-info");
+         profile.append(div)
+      }
+    </script>
+  </body>
+</html>
