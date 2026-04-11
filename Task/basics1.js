@@ -34,7 +34,6 @@ console.log("const first value:", country);
 // country="usa";
 // console.log("const updated value:", country);gives error
 
-
 // const country = "canada"(redclare) gives error
 
 
