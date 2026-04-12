@@ -1,0 +1,39 @@
+<!-- // Task 7: Change text on button click. 
+// Objective 
+// Learn how to: 
+//  Select elements from DOM  
+//  Handle click events  
+//  Update text dynamically  
+// Approach (How to Think) 
+// 1. You need 2 things:  
+// o Element to change (text)  
+// o Element to trigger action (button)  
+// 2. Steps:  
+// o Select both elements  
+// o Add event listener to button  
+// o Change text inside function  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 id="cat">Hello monica</h1>
+    <button id="dog">submit</button>
+  
+    
+</body>
+<script>
+   let h1 = document.getElementById("cat");
+   let btn =  document.getElementById("dog");
+
+    btn.addEventListener("click",function(){
+        h1.innerHTML = "hi";
+        
+    });
+
+</script>
+</html>
