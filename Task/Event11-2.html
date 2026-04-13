@@ -1,0 +1,47 @@
+<!-- : Mouse hover color change. 
+Objective 
+Learn how to: 
+ Handle mouse events  
+ Change styles dynamically  
+Approach (How to Think) 
+1. Select element (box/text/button)  
+2. Use 2 events:  
+o mouseover → when mouse enters  
+o mouseout → when mouse leaves  
+3. Change style accordingly -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse hover effect</title>
+</head>
+<body>
+    <input type="text" id="inp" placeholder="search">
+    <button id="btn">click</button>
+
+    <script>
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("mouseover",()=>{
+            btn.style.backgroundColor = "skyblue";
+
+        })
+
+        btn.addEventListener("mouseout",()=>{
+            btn.style.backgroundColor = "pink"
+        })
+
+
+        text.addEventListener("mouseover",()=>{
+         text.style.backgroundColor = "pink"
+        })
+
+        text.addEventListener("mouseout",()=>{
+        text.style.backgroundColor = "pink"
+        })
+    </script>
+    
+</body>
+</html>
