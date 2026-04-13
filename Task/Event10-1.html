@@ -1,0 +1,33 @@
+ <!-- Show live input preview. 
+Objective 
+Learn how to: 
+ Capture user input in real-time  
+ Update UI dynamically as user types  
+Approach (How to Think) 
+1. You need:  
+o An <input> field (user types here)  
+o A display element (<h2> or <p>)  
+2. Listen to typing event:  
+o Use input event (fires on every keystroke)  
+3. Update display with input value  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <input type="text" id ="text" placeholder="type here somthing"/>
+    <h1 id="preview">I Am Here</h1>
+    <script>
+        let a = document.getElementById("text");
+        let b = document.getElementById("preview");
+
+        a.addEventListener("input",()=>{
+            b.innerText=a.value;
+        });
+    </script>
+    
+</body>
+</html>

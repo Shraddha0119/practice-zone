@@ -1,0 +1,40 @@
+ <!-- Change background color on click. 
+Objective 
+Learn how to: 
+ Modify CSS using JavaScript  
+ Work with events  
+Approach (How to Think) 
+1. Target body element  
+2. On button click:  
+o Change style.backgroundColor -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        #btn{
+            background-color: aqua;
+            text-align: center;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">click</button>
+    <script>
+        let body = document.body;
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener( "mouseover",()=>{
+            // btn.style.backgroundColor = "pink"
+            body.style.backgroundColor = "pink"
+
+        })
+    </script>
+    
+</body>
+</html>

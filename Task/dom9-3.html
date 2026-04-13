@@ -1,0 +1,33 @@
+ <!-- Add new paragraph dynamically. 
+Objective 
+Learn how to: 
+ Create elements  
+ Add them to DOM  
+Approach (How to Think) 
+1. On button click:  
+o Create new element (createElement)  
+o Add text (innerText)  
+o Append to body  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <button id="btn">add paragraph</button>
+    <script>
+        // let search = document.getElementById("search")
+        let btn = document.getElementById("btn")
+
+        btn.addEventListener("click",()=>{
+            let para = document.createElement("p")
+            para.innerText="hardwork is the key of success"
+            document.body.appendChild(para)
+        })
+    </script>
+    
+</body>
+</html>
