@@ -1,3 +1,19 @@
+// Task 1: Create variables using var, let, const. Try redeclaration and updates. 
+// Objective 
+// Understand: 
+//  Redeclaration  
+//  Updating values  
+//  Scope behavior  
+// Approach (How to Think) 
+// When solving this: 
+// 1. Start simple → create variables with all 3 keywords  
+// 2. Test rules one by one:  
+// o Can I redeclare it?  
+// o Can I update it?  
+// 3. Break it intentionally → errors help learning  
+// 4. Use console.log() after every step
+
+
 // <!-- 1.var -->
 
 var name = "shraddha";

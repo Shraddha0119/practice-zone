@@ -1,3 +1,12 @@
+//  Check data types using typeof. 
+// Objective 
+// Understand different data types in JavaScript 
+// Approach (How to Think) 
+// 1. Create different types of values  
+// 2. Use typeof to inspect them  
+// 3. Observe unexpected results 
+
+
 // 1 string
 
 let name = "shraddha";
