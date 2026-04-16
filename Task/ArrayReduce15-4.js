@@ -48,5 +48,4 @@ for(let key in obj){
    sum +=Number(obj[key])
 }
 
-
  console.log("reduce to find sum:", sum);
