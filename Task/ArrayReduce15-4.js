@@ -28,4 +28,25 @@
 
  console.log("reduce to find sum:", reduce);
  
- 
+ let obj ={
+ math:50,
+ english:90,
+ hindi:80
+
+}
+console.log(obj)
+
+
+
+// let sum = Object.values(obj).reduce((total,value)=>{
+//    return total+value;
+    
+// },0)
+
+let sum =0;
+for(let key in obj){
+   sum +=Number(obj[key])
+}
+
+
+ console.log("reduce to find sum:", sum);
