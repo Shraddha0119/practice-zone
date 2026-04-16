@@ -21,6 +21,8 @@ function sum(a,b) {
     return a+b;
 }
 
-let result =sum (3,6)
+let result =sum (10,6)
 
 console.log(result);
+
+
