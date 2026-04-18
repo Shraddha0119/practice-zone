@@ -1,0 +1,48 @@
+<!-- // Task 21: setTimeout example. 
+// Objective 
+// Learn how to: 
+//  Run code after delay  
+//  Understand async behavior  
+// Approach (How to Think) 
+// 1. You want to:  
+// o Delay execution  
+// 2. Use:  
+// o setTimeout(function, time) 
+
+
+// console.log("Start");
+
+// setTimeout(function() {
+//     console.log("Hello after 2 seconds");
+// }, 2000);
+
+// console.log("End");
+ -->
+/
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTime out</title>
+</head>
+<body>
+<button id="btn">click</button>
+    
+</body>
+<script>
+    // let btn = document.getElementById("btn");
+
+    // btn.addEventListener("click",function() {
+    //     setTimeout(function() {
+    //         alert("the function apper in 3 seconds");
+    //     },3000);
+    // });
+    let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function() {
+    setTimeout(function() {
+        alert("Button clicked after 3 seconds!");
+    }, 3000);
+});
+</script>
+</html>
