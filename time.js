@@ -1,5 +1,5 @@
 setInterval(() => {
     const date =new Date();
-    console.log(Date.gethours(),Date.getminutes(),Date.getseconds());
+    console.log(date.getHours(),date.getMinutes(),date.getSeconds());
     
 },1000);
