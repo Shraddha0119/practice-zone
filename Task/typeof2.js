@@ -35,7 +35,7 @@ console.log( typeof isStudent)
 // console.log(typeof data)
 
 // Array
- let colors = ["red","yellow","blue"]
+ var colors = ["red","yellow","blue"]
  console.log(colors);
  console.log(typeof colors);
  
